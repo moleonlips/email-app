@@ -1,0 +1,35 @@
+.container{
+     display: flex;
+     font-size: .9em;
+}
+.folder-and-messages{
+     width: 140px;
+     padding: 20px 0;
+     background-color: #ccc;
+
+}
+.mess-list{
+     flex: 1;
+     padding: 20px 0;
+}
+.folder-and-messages, .mess-list{
+     overflow-y: scroll;
+     height: 35vh;
+}
+.folder-atv{
+     background-color: rgb(69, 126, 212);
+     padding: 0 10px;
+     color: #fff;
+}
+
+a{
+     text-decoration: none;
+     color: #333;
+     display: block;
+     padding: 0 10px;
+     line-height: 30px;
+}
+
+li{
+     list-style: none;
+}

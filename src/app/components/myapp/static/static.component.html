@@ -1,0 +1,21 @@
+<div class="static-container">
+     <div>
+          <a [routerLink]="['/myapp/messages']" routerLinkActive="nav-active">Messages</a>
+          <a [routerLink]="['/myapp/contacts']" routerLinkActive="nav-active">Contacts</a>
+          <a [routerLink]="['/myapp/preferences']" routerLinkActive="nav-active">Preferences</a>
+     </div>
+
+     <div>
+          <span>
+               <!-- <select name="currentUser" id="currentUser" [(ngModel)]="username">
+                    <option 
+                         value="item" 
+                         *ngFor="let item of userOptions"
+                    ></option>
+               </select> -->
+
+               <button><i class="fas fa-home"></i></button>
+               <button><i class="fas fa-envelope"></i> new message</button>
+          </span>
+     </div>
+</div>

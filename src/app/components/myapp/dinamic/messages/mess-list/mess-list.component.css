@@ -1,0 +1,45 @@
+.mess-detail{
+     width:100%;
+     position: absolute;
+     top: 45vh;
+     left: 0;
+     text-align: justify;
+}
+
+table, th, td {
+     border-collapse: collapse;
+     border: unset;
+}
+
+thead th{
+     padding: 0 30px;
+}
+
+th, td{
+     margin: 0;
+     padding: 0;
+     text-align: left;
+}
+
+a{
+     display: block;
+     text-decoration: none;
+     color: #333;
+     padding: 0 30px;
+     line-height: 30px;
+     font-size: .88em;
+}
+
+tbody tr:hover {
+     background-color:rgba(43, 109, 184, 0.479);
+     color: rgb(27, 26, 26);
+}
+
+.mess-act{
+     background-color:rgb(43, 109, 184);
+     color: #fff;
+}
+
+tbody tr {
+     margin-left: 30px;
+}

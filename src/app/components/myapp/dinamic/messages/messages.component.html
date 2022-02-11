@@ -1,0 +1,17 @@
+<div class="container">
+     <div class="folder-and-messages">
+          <ul class="folder-list" *ngIf="folders">
+               <li *ngFor="let item of folders">
+                    <a [routerLink]="['/myapp/messages/', item]" 
+                         routerLinkActive="folder-atv">
+                         <span *ngIf="crf === item"><i class="fas fa-folder-open"></i></span>
+                         <span *ngIf="crf !== item"><i class="fas fa-folder"></i></span> 
+                         {{item}}
+                    </a>
+               </li>
+          </ul>
+     </div>
+     <div class="mess-list">
+          <router-outlet></router-outlet>
+     </div>
+</div>

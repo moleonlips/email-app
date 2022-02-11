@@ -1,0 +1,19 @@
+<div *ngIf="message" class="container">
+     <div class="head-message">
+          <div class="left-side">
+               <h2>{{message.subject}}</h2>
+               <p>
+                    {{message.from}} <b><i class="fas fa-long-arrow-alt-right"></i></b> {{message.to}}
+               </p>               
+          </div>
+          <div>
+               <p style="line-height: 30px;">{{message.date | date: 'medium'}}</p>
+               <p>
+                    <button><i class="fas fa-reply"></i> Reply</button>
+                    <button><i class="fas fa-share-square"></i> Forward</button>
+                    <button><i class="fas fa-trash-alt"></i> Delete</button>
+               </p>
+          </div>
+     </div>
+     <p class="message-content" [innerHTML]="message.body | breakLine"></p>
+</div>

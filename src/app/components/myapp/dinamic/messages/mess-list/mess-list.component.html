@@ -1,0 +1,33 @@
+<table style="width: 100%">
+     <thead>
+          <tr>
+               <th style="width: 24%">From</th>
+               <th style="width: 58%">Subject</th>
+               <th style="width: 18%">Date</th>
+          </tr>
+     </thead>
+
+     <tbody>
+          <tr *ngFor="let item of listMess">
+               <td style="width: 24%">
+                    <a routerLinkActive="mess-act" [routerLink]="[ '/myapp/messages', item.folder, item._id ]">
+                         {{item.from | limitString: 30}}
+                    </a>
+               </td>
+               <td style="width: 58%">
+                    <a routerLinkActive="mess-act" [routerLink]="[ '/myapp/messages', item.folder, item._id ]">
+                         {{item.subject}}
+                    </a>
+               </td>
+               <td style="width: 18%">
+                    <a routerLinkActive="mess-act" [routerLink]="[ '/myapp/messages', item.folder, item._id ]">
+                         {{item.date | date: 'y/MM/dd'}}
+                    </a>
+               </td>
+          </tr>
+     </tbody>
+</table>
+
+<div class="mess-detail">
+     <router-outlet></router-outlet>
+</div>
